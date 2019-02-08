@@ -23,11 +23,12 @@
   padding-right: 0px;
 }
 #project-block .col-3{
-  padding-left: 24px;
+  padding-left: 4%;
+  padding-right: 0px;
 }
 
 .project-img{
-  margin-bottom:50px;
+  margin-bottom:47px;
 }
 #project-nav{
     list-style: none;

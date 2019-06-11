@@ -34,7 +34,7 @@ export class ProjectsComponent implements OnInit {
             width: 6
           },
           {
-            url: "assets/img/atom/4.png",
+            url: "assets/img/atom/4.jpg",
             width: 9
           },
           {
@@ -115,7 +115,7 @@ export class ProjectsComponent implements OnInit {
           techSpecs: "Angular 6, shopify buy button sdk",
           images: [
             {
-              url: "assets/img/grease/v3-1.png",
+              url: "assets/img/grease/v3-1.jpg",
               width: 9
             },
             {

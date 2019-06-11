@@ -32,3 +32,12 @@
 #no-hover:hover{
     background: transparent;
 }
+
+
+@media(max-width:450px){
+  .slider{
+    transform: scale(0.7);
+    flex: 0 0 140%;
+    max-width: 140%;  
+  }
+}

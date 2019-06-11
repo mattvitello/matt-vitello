@@ -7,10 +7,44 @@ import * as $ from 'jquery';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements OnInit {
-  testProject: any = {
-    title: "hello",
-    link: "",
-    versions: {},
+
+  atomProject: any = {
+    title: "Atom",
+    versions: [
+      {
+        versionNum: 1,
+        link: "https://shopatombrand.com/",
+        description: "Online merchandise shop created for <a href='https://www.youtube.com/channel/UCXcn2mBqcdqe6EwsBFrJmDA/featured'>Drew Phillips's</a> brand Atom. Design inspiration from <a href='https://www.cameronsworld.net/'>camerons world</a>.",
+        techSpecs: "Angular 6, shopify buy button sdk",
+        images: [
+          {
+            url: "assets/img/atom/1.png",
+            width: 9
+          },
+          {
+            url: "assets/img/atom/1m.png",
+            width: 3
+          },
+          {
+            url: "assets/img/atom/2.png",
+            width: 6
+          },
+          {
+            url: "assets/img/atom/3.png",
+            width: 6
+          },
+          {
+            url: "assets/img/atom/4.png",
+            width: 9
+          },
+          {
+            url: "assets/img/atom/4m.png",
+            width: 3
+          }
+        ],
+        latestMessage: ""
+      }
+    ]
   }
 
   drewProject: any = {
@@ -298,6 +332,47 @@ export class ProjectsComponent implements OnInit {
             width: 6
           }
         ],
+        latestMessage: "this version of the site is no longer live"
+      },
+      {
+        versionNum: 8,
+        link: "https://royblair.com/",
+        description: "Website created for musician <a href='https://twitter.com/royblair'>Roy Blair</a>.",
+        techSpecs: "Angular 6, shopify buy button sdk",
+        images: [
+          {
+            url: "assets/img/roy/v8-1.png",
+            width: 9
+          },
+          {
+            url: "assets/img/roy/v8-2m.png",
+            width: 3
+          },
+          {
+            url: "assets/img/roy/v8-2.png",
+            width: 9
+          },
+          {
+            url: "assets/img/roy/v8-1m.png",
+            width: 3
+          },
+          {
+            url: "assets/img/roy/v8-3.png",
+            width: 6
+          },
+          {
+            url: "assets/img/roy/v8-4.png",
+            width: 6
+          },
+          {
+            url: "assets/img/roy/v8-5.png",
+            width: 6
+          },
+          {
+            url: "assets/img/roy/v8-6.png",
+            width: 6
+          }
+        ],
         latestMessage: ""
       }
     ]
@@ -342,7 +417,7 @@ export class ProjectsComponent implements OnInit {
             },
             {
               url: "assets/img/pathway/8.png",
-              width: 6
+              width: 12
             }
           ],
           latestMessage: ""
@@ -486,15 +561,15 @@ export class ProjectsComponent implements OnInit {
     ]
   }
 
-  projects = [this.royProject, this.drewProject, this.pathwayBiotechnologyProject, this.earthsmartProject, this.ecnowProject, this.livproactivProject, this.desalinationProject]
+  projects = [this.atomProject, this.royProject, this.drewProject, this.pathwayBiotechnologyProject, this.earthsmartProject, this.ecnowProject, this.livproactivProject, this.desalinationProject]
   currentProject: any;
   currentProjectVersion: any;
 
   constructor() { }
 
   ngOnInit() {
-    this.currentProject = this.royProject;
-    this.currentProjectVersion = this.royProject.versions[this.royProject.versions.length - 1];
+    this.currentProject = this.atomProject;
+    this.currentProjectVersion = this.currentProject.versions[this.currentProject.versions.length - 1];
   }
 
   changeProject(event: any, projectNum: number){

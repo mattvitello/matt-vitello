@@ -2,6 +2,15 @@
     cursor: pointer;
 }
 
+#hideMe{
+  position: absolute;
+  opacity: 0.0;
+}
+
+#hideMe img{
+  width:15px;
+}
+
 .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10{
 	margin: 0;
     padding: 0;

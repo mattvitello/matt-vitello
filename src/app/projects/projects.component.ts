@@ -288,7 +288,7 @@ export class ProjectsComponent implements OnInit {
       {
         versionNum: 7,
         link: "https://royblair.com/",
-        description: "Website created for musician <a href='https://twitter.com/royblair'>Roy Blair</a>.",
+        description: "Redesign for new music video and merch drop.",
         techSpecs: "Angular 6, shopify buy button sdk",
         images: [
           {
@@ -337,8 +337,8 @@ export class ProjectsComponent implements OnInit {
       {
         versionNum: 8,
         link: "https://royblair.com/",
-        description: "Website created for musician <a href='https://twitter.com/royblair'>Roy Blair</a>.",
-        techSpecs: "Angular 6, shopify buy button sdk",
+        description: "Redesign for US tour.",
+        techSpecs: "Angular 6",
         images: [
           {
             url: "assets/img/roy/v8-1.png",
@@ -370,6 +370,39 @@ export class ProjectsComponent implements OnInit {
           },
           {
             url: "assets/img/roy/v8-6.png",
+            width: 6
+          }
+        ],
+        latestMessage: "this version of the site is no longer live"
+      },
+      {
+        versionNum: 9,
+        link: "https://royblair.com/",
+        description: "Website created for musician <a href='https://twitter.com/royblair'>Roy Blair</a>.",
+        techSpecs: "Angular 6",
+        images: [
+          {
+            url: "assets/img/roy/v9-1.png",
+            width: 9
+          },
+          {
+            url: "assets/img/roy/v9-1m.png",
+            width: 3
+          },
+          {
+            url: "assets/img/roy/v9-2.png",
+            width: 9
+          },
+          {
+            url: "assets/img/roy/v9-2m.png",
+            width: 3
+          },
+          {
+            url: "assets/img/roy/v9-3.png",
+            width: 6
+          },
+          {
+            url: "assets/img/roy/v9-4.png",
             width: 6
           }
         ],
@@ -561,14 +594,14 @@ export class ProjectsComponent implements OnInit {
     ]
   }
 
-  projects = [this.atomProject, this.royProject, this.drewProject, this.pathwayBiotechnologyProject, this.earthsmartProject, this.ecnowProject, this.livproactivProject, this.desalinationProject]
+  projects = [this.royProject, this.atomProject, this.drewProject, this.pathwayBiotechnologyProject, this.earthsmartProject, this.ecnowProject, this.livproactivProject, this.desalinationProject]
   currentProject: any;
   currentProjectVersion: any;
 
   constructor() { }
 
   ngOnInit() {
-    this.currentProject = this.atomProject;
+    this.currentProject = this.royProject;
     this.currentProjectVersion = this.currentProject.versions[this.currentProject.versions.length - 1];
   }
 

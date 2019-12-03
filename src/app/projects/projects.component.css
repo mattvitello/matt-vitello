@@ -94,8 +94,12 @@
     float: right;
 }
 
-.v-active{
+#version .v-active{
     text-decoration: underline;
+}
+
+#version .v-active a {
+  background: #ffff66;
 }
 
 /* make youtube videos responsive */

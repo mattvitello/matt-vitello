@@ -610,6 +610,7 @@ export class ProjectsComponent implements OnInit {
     this.currentProjectVersion = this.currentProject.versions[this.currentProject.versions.length - 1];
     $('.p-item').removeClass('active');
     $($(event.target).parent()).addClass('active');
+    this.hideTechSpecs();
   }
 
   changeVersion(versionNum: number){

@@ -34,3 +34,7 @@ a:hover{
   text-decoration: underline;
   background-color: transparent !important;
 }
+
+.ekko-lightbox.modal .modal-content{
+  border: none;
+}
